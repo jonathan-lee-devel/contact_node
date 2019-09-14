@@ -7,4 +7,3 @@ var Contact = function (firstname, surname, email, phone, message) {
 };
 
 module.exports = Contact;
-••••••••••••••

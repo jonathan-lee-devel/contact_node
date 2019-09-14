@@ -10,7 +10,7 @@ const PORT = 8080;
 const Contact = require('./Contact.js');
 
 // Configure and Connect MongoDB
-const secrets = require('./secrets');
+const secrets = require('/var/secrets');
 
 const nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({

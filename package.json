@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"express": "^4.16.1",
-		"mongodb": "^3.3.2"
+		"mongodb": "^3.3.2",
+		"nodemailer": "^6.3.0"
 	}
 }

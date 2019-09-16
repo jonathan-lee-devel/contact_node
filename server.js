@@ -7,10 +7,9 @@ app.use(express.urlencoded());
 const HOST = 'jonathanlee.io';
 const PORT = 8080;
 
+// Configure and Connect MongoDB as well as E-mail notifier
+const secrets = require('/var/node/secrets.js');
 const Contact = require('./Contact.js');
-
-// Configure and Connect MongoDB
-const secrets = require('/var/secrets.js');
 
 const nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
@@ -35,6 +34,8 @@ client.connect(err => {
 
 });
 
+
+// POST Handler
 app.post('/submit_contact', (req, res) => {
         const firstname = req.body.firstname;
 	const surname = req.body.surname;
